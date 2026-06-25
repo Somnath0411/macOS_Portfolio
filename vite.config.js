@@ -8,6 +8,8 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   resolve: {
     alias: {
+      'react': resolve(dirname(fileURLToPath(import.meta.url)), 'node_modules/react'),
+      'react-dom': resolve(dirname(fileURLToPath(import.meta.url)), 'node_modules/react-dom'),
       '#components':resolve(dirname(fileURLToPath(import.meta.url)), 'src/components'),
       '#constants':resolve(dirname(fileURLToPath(import.meta.url)), 'src/constants'),
       '#store':resolve(dirname(fileURLToPath(import.meta.url)), 'src/store'),
