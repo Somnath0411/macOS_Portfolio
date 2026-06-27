@@ -1,12 +1,31 @@
-import dayjs from 'dayjs';
-
+import { useEffect, useState } from "react";
 
 import {navLinks} from "#constants";
 import {navIcons} from "#constants";
 import useWindowStore from "#store/window.js";
 
+const formatDateTime = (date) =>
+    new Intl.DateTimeFormat("en-US", {
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+    }).format(date);
+
 const Navbar = () => {
     const {openWindow }= useWindowStore();
+    const [currentTime, setCurrentTime] = useState(() => formatDateTime(new Date()));
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentTime(formatDateTime(new Date()));
+        }, 60000);
+
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <nav>
             <div>
@@ -30,7 +49,7 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <time>{dayjs().format("ddd MMM D h:mm A")}</time>
+                <time>{currentTime}</time>
             </div>
         </nav>
     )
