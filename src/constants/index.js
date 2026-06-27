@@ -77,52 +77,52 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
+        date: "",
         title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-        image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+            "No blogs yet",
+        image: "",
+        link: "",
     },
-    {
-        id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-        image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-    },
-    {
-        id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-    },
+    // {
+    //     id: 2,
+    //     date: "",
+    //     title: "",
+    //     image: "",
+    //     link: "",
+    // },
+    // {
+    //     id: 3,
+    //     date: "",
+    //     title: "",
+    //     image: "",
+    //     link: "",
+    // },
 ];
 
 const techStack = [
     {
         category: "Frontend",
-        items: ["React.js", "Next.js", "TypeScript"],
+        items: ["React.js", "html","javascript"],
     },
-    {
-        category: "Mobile",
-        items: ["React Native", "Expo"],
-    },
+    // {
+    //     category: "Mobile",
+    //     items: ["React Native", "Expo"],
+    // },
     {
         category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
+        items: ["Tailwind CSS", "CSS"],
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        items: ["Node.js", "Express"],
     },
     {
         category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        items: ["MongoDB", "MySQL"],
     },
     {
         category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        items: ["Git", "GitHub"],
     },
 ];
 
@@ -132,28 +132,28 @@ const socials = [
         text: "Github",
         icon: "/icons/github.svg",
         bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        link: "https://github.com/Somnath0411",
     },
+    // {
+    //     id: 2,
+    //     text: "Platform",
+    //     icon: "/icons/atom.svg",
+    //     bg: "#4bcb63",
+    //     link: "https://jsmastery.com/",
+    // },
+    // {
+    //     id: 3,
+    //     text: "Twitter/X",
+    //     icon: "/icons/twitter.svg",
+    //     bg: "#ff866b",
+    //     link: "https://x.com/jsmasterypro",
+    // },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
-        link: "https://jsmastery.com/",
-    },
-    {
-        id: 3,
-        text: "Twitter/X",
-        icon: "/icons/twitter.svg",
-        bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
-    },
-    {
-        id: 4,
         text: "LinkedIn",
         icon: "/icons/linkedin.svg",
         bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        link: "https://www.linkedin.com/in/somnath-sb/",
     },
 ];
 
@@ -163,45 +163,45 @@ const photosLinks = [
         icon: "/icons/gicon1.svg",
         title: "Library",
     },
-    {
-        id: 2,
-        icon: "/icons/gicon2.svg",
-        title: "Memories",
-    },
-    {
-        id: 3,
-        icon: "/icons/file.svg",
-        title: "Places",
-    },
-    {
-        id: 4,
-        icon: "/icons/gicon4.svg",
-        title: "People",
-    },
-    {
-        id: 5,
-        icon: "/icons/gicon5.svg",
-        title: "Favorites",
-    },
+    // {
+    //     id: 2,
+    //     icon: "/icons/gicon2.svg",
+    //     title: "Memories",
+    // },
+    // {
+    //     id: 3,
+    //     icon: "/icons/file.svg",
+    //     title: "Places",
+    // },
+    // {
+    //     id: 4,
+    //     icon: "/icons/gicon4.svg",
+    //     title: "People",
+    // },
+    // {
+    //     id: 5,
+    //     icon: "/icons/gicon5.svg",
+    //     title: "Favorites",
+    // },
 ];
 
 const gallery = [
     {
         id: 1,
-        img: "/images/gal1.png",
+        img: "/images/gal1.jpg",
     },
     {
         id: 2,
-        img: "/images/gal2.png",
+        img: "/images/gal2.jpeg",
     },
     {
         id: 3,
-        img: "/images/gal3.png",
+        img: "/images/gal3.jpeg",
     },
-    {
-        id: 4,
-        img: "/images/gal4.png",
-    },
+    // {
+    //     id: 4,
+    //     img: "/images/gal4.png",
+    // },
 ];
 
 export {
@@ -225,7 +225,7 @@ const WORK_LOCATION = {
         // ▶ Project 1
         {
             id: 5,
-            name: "Nike Ecommerce Website Application",
+            name: "Ecommerce Website Application",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-5", // icon position inside Finder
@@ -233,52 +233,52 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Nike Project.txt",
+                    name: "ecommerce.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
-                    description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
-                    ],
+                   description: [
+    "The eCommerce website is a full-stack web application designed to deliver a fast, intuitive, and secure online shopping experience.",
+    "It provides core eCommerce functionality including product browsing, category filtering, shopping cart management, user authentication, and order processing.",
+    "The application leverages reusable React components, RESTful APIs, responsive design principles, and efficient state management to ensure smooth interactions across devices.",
+    "Built with React, Node.js, Express.js, MySQL, and modern JavaScript, it follows a scalable client-server architecture with efficient database management and maintainable code.",
+]
                 },
                 {
                     id: 2,
-                    name: "nike.com",
+                    name: "ecommerce",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://github.com/Somnath0411/ecommerce",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "nike.png",
+                    name: "ecommerce.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
                     imageUrl: "/images/project-1.png",
                 },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
-                },
+                // {
+                //     id: 5,
+                //     name: "Design.fig",
+                //     icon: "/images/plain.png",
+                //     kind: "file",
+                //     fileType: "fig",
+                //     href: "https://google.com",
+                //     position: "top-60 right-20",
+                // },
             ],
         },
 
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "employee management system",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
@@ -286,52 +286,52 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "employee-management-system.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-                    ],
+    "The Employee Management System is a full-stack web application built to simplify employee record management through a modern and intuitive interface.",
+    "It implements complete CRUD operations, allowing administrators to efficiently create, update, view, and delete employee information while maintaining organized data.",
+    "The application features responsive UI components, client-side routing, form validation, and seamless API integration to deliver a smooth user experience.",
+    "Built with React, Node.js, Express.js, MySQL, and Tailwind CSS, it follows a scalable client-server architecture with RESTful APIs for efficient data management.",
+],
                 },
                 {
                     id: 2,
-                    name: "ai-resume-analyzer.com",
+                    name: "employee-management-system.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    href: "https://github.com/Somnath0411/employee-management-system",
                     position: "top-20 left-20",
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
+                    name: "employee-management-system.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 left-80",
                     imageUrl: "/images/project-2.png",
                 },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 left-5",
-                },
+                // {
+                //     id: 5,
+                //     name: "Design.fig",
+                //     icon: "/images/plain.png",
+                //     kind: "file",
+                //     fileType: "fig",
+                //     href: "https://google.com",
+                //     position: "top-60 left-5",
+                // },
             ],
         },
 
         // ▶ Project 3
         {
             id: 7,
-            name: "Food Delivery App",
+            name: "Multi-Modal depression detection",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-80",
@@ -339,45 +339,45 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Food Delivery App Project.txt",
+                    name: "Multimodal depression detection.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "Our Mental Health Analysis System is a smart tool that gauges emotional wellbeing through text, audio, and visual input.",
+                        "Instead of relying on guesswork, you can type a journal entry, upload a voice clip, or share a photo, and get an instant emotional and mental health snapshot.",
+                        "Think of it like a personal wellness mirror—reading your tone, words, and expressions to offer recommendations tailored just for you.",
+                        "It’s built with Python and Flask on the backend, paired with a React frontend, all running locally so your data stays private and is never stored.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "food-delivery-app.com",
+                    name: "multimodal-depression-detection.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "https://github.com/Somnath0411/Realtime-MultiModal-Depression-detection-",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "food-delivery-app.png",
+                    name: "multimodal-depression-detection.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
                     imageUrl: "/images/project-3.png",
                 },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
-                },
+                // {
+                //     id: 5,
+                //     name: "Design.fig",
+                //     icon: "/images/plain.png",
+                //     kind: "file",
+                //     fileType: "fig",
+                //     href: "https://google.com",
+                //     position: "top-60 right-20",
+                // },
             ],
         },
     ],
@@ -397,7 +397,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-10 left-5",
-            imageUrl: "/images/adrian.jpg",
+            imageUrl: "/images/me.jpeg",
         },
         {
             id: 2,
@@ -406,7 +406,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
+            imageUrl: "/images/casual-me.jpeg",
         },
         {
             id: 3,
@@ -415,7 +415,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
+            imageUrl: "/images/conference-me.jpeg",
         },
         {
             id: 4,
@@ -425,12 +425,12 @@ const ABOUT_LOCATION = {
             fileType: "txt",
             position: "top-60 left-5",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/adrian.jpg",
+            image: "/images/conference-me.jpeg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Hi, I’m Somnath 👋 — a full-stack dev who genuinely enjoys the messy middle part of building software, not just the finished product.",
+                "React and MySQL are my comfort zone, but I’m just as happy wiring up a REST API or untangling a gnarly state bug at 1AM.",
+                "I’ve shipped real things in real teams from a winning hackathon project on mental health analysis to a full CRUD employee management system so I care a lot about code that actually holds up outside a demo.",
+                "When I’m not coding, I’m probably reading docs I should’ve read three days ago, or convincing myself one more certification will finally make me feel ‘done learning’ (spoiler: it won’t) 😅",
             ],
         },
     ],
@@ -456,31 +456,31 @@ const RESUME_LOCATION = {
 };
 
 const TRASH_LOCATION = {
-    id: 4,
-    type: "trash",
-    name: "Trash",
-    icon: "/icons/trash.svg",
-    kind: "folder",
-    children: [
-        {
-            id: 1,
-            name: "trash1.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-10 left-10",
-            imageUrl: "/images/trash-1.png",
-        },
-        {
-            id: 2,
-            name: "trash2.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-40 left-80",
-            imageUrl: "/images/trash-2.png",
-        },
-    ],
+    // id: 4,
+    // type: "trash",
+    // name: "Trash",
+    // icon: "/icons/trash.svg",
+    // kind: "folder",
+    // children: [
+    //     {
+    //         id: 1,
+    //         name: "trash1.png",
+    //         icon: "/images/image.png",
+    //         kind: "file",
+    //         fileType: "img",
+    //         position: "top-10 left-10",
+    //         imageUrl: "/images/trash-1.png",
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "trash2.png",
+    //         icon: "/images/image.png",
+    //         kind: "file",
+    //         fileType: "img",
+    //         position: "top-40 left-80",
+    //         imageUrl: "/images/trash-2.png",
+    //     },
+    // ],
 };
 
 export const locations = {

@@ -12,7 +12,7 @@ const Photos = () => {
     const {openWindow}= useWindowStore();
     return (
         <>
-            <div className="window-header">
+            <div id="window-header">
                 <WindowControls target="photos"/>
                 <div className="w-full flex justify-end items-center gap-3 text-gray-500">
                     <Mail className="icon"/>

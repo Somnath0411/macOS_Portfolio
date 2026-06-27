@@ -17,8 +17,12 @@ const Text = () => {
       </div>
       <div className="p-4 text-black bg-white min-w-[320px] max-w-[520px]">
         {image && (
-          <div className="mb-4">
-            <img src={image} alt={name} className="w-full h-auto rounded-md" />
+          <div className="mb-4 flex justify-center">
+            <img
+              src={image}
+              alt={name}
+              className="max-h-[240px] w-auto h-auto rounded-md"
+            />
           </div>
         )}
         {subtitle && <p className="mb-4 text-sm text-slate-600">{subtitle}</p>}
