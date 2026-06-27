@@ -1,7 +1,7 @@
 import Navbar from "#components/Navbar.jsx";
 import Welcome from "#components/Welcome.jsx";
 import Dock from "#components/Dock.jsx";
-import Terminal from "#components/Terminal.jsx";
+import Terminal from "#windows/Terminal.jsx";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 gsap.registerPlugin(Draggable);
