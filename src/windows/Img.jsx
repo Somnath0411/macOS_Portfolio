@@ -19,7 +19,7 @@ const Img = () => {
       <div className="p-4 bg-white text-black min-w-[320px] max-w-[560px]">
         {src && (
           <div className="mb-4">
-            <img src={src} alt={name} className="w-full h-auto rounded-md" />
+            <img src={src} alt={name} className="w-full max-h-150 rounded-md" />
           </div>
         )}
         {subtitle && <p className="mb-4 text-sm text-slate-600">{subtitle}</p>}

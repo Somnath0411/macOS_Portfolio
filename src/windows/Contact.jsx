@@ -23,7 +23,7 @@ const Contact = () => {
         {socials.map(({id,bg,link,icon,text})=>(
             <li key={id} style={{background:bg}} >
                 <a href={link} target="_blank" rel="noopener noreferrer" title={text} className="flex items-center gap-2 ">
-                    <img src={icon} alt={text} className="size-5"/>
+                    <img src={icon} alt={text} className="size-2"/>
                     <p>{text}</p>
                 </a>
             </li>

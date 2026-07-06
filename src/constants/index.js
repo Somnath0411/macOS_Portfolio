@@ -400,24 +400,6 @@ const ABOUT_LOCATION = {
             imageUrl: "/images/me.jpeg",
         },
         {
-            id: 2,
-            name: "casual-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-28 right-72",
-            imageUrl: "/images/casual-me.jpeg",
-        },
-        {
-            id: 3,
-            name: "conference-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 left-80",
-            imageUrl: "/images/conference-me.jpeg",
-        },
-        {
             id: 4,
             name: "about-me.txt",
             icon: "/images/txt.png",
@@ -487,7 +469,6 @@ export const locations = {
     work: WORK_LOCATION,
     about: ABOUT_LOCATION,
     resume: RESUME_LOCATION,
-    trash: TRASH_LOCATION,
 };
 
 const INITIAL_Z_INDEX = 1000;

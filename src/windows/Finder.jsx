@@ -35,8 +35,8 @@ const Finder = () => {
                                 key={item.id}
                                 onClick={()=>
                                 setActiveLocation(item)}
-                                className={clsx(item.id===activeLocation.id?"active":"not-active")}>
-                            <img src={item.icon} className="w-4" alt={item.name}
+                                className={clsx(item.id===activeLocation.id?"active":"")}>
+                            <img src={item.icon} className="w-4" alt={item.name} 
                             />
                                 <p className="text-sm font-medium">
                                     {item.name}
@@ -52,7 +52,7 @@ const Finder = () => {
                                         key={item.id}
                                         onClick={()=>
                                             setActiveLocation(item)}
-                                        className={clsx(item.id===activeLocation.id?"active":"not-active")}>
+                                        className={clsx(item.id===activeLocation.id?"active":"")}>
                                         <img src={item.icon} className="w-4" alt={item.name}
                                         />
                                         <p className="text-sm font-medium">
@@ -69,7 +69,8 @@ const Finder = () => {
                     {activeLocation ?.children.map((item)=>(
                         <li key={item.id} className={item.position} onClick={()=>
                             openItem(item)}>
-                            <img src={item.icon}  alt={item.name}/><p>
+                            <img src={item.icon}  alt={item.name}/>
+                            <p>
                             {item.name}
                         </p>
                         </li>
