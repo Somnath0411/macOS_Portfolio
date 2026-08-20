@@ -114,7 +114,7 @@ const techStack = [
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express"],
+        items: ["Node.js", "python"],
     },
     {
         category: "Database",
@@ -123,6 +123,10 @@ const techStack = [
     {
         category: "Dev Tools",
         items: ["Git", "GitHub"],
+    },
+    {
+        category:"Api",
+        items:["RESTAPI","FASTAPI"]
     },
 ];
 
