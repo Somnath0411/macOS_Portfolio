@@ -8,7 +8,7 @@ const FONT_WEIGHTS ={
 const renderText = (text, className, baseWeight = 400)=>{
     return[...text].map((char,i)=>(
         <span key={i} className={className} style={{fontVariationSettings:`'wght' ${baseWeight}`}}>
-            {char=== " "?'\u00A0':char}
+            {char}
         </span>
     ))
 }
@@ -62,14 +62,11 @@ const Welcome = () => {
     },[]);
     return (
         <section id="welcome">
-            <p ref={subtitleRef}>
-                {renderText("Hey , I'm Somnath! Welcome to my",'text-3xl font-georama', 100)}</p>
-            <h1 ref={titleRef} className="mt-7">
-                {renderText("portfolio",'text-9xl italic font-georama')}</h1>
+            <p ref={subtitleRef} className="welcome-subtitle">
+                {renderText("Hey, I'm Somnath! Welcome to my",'font-georama', 100)}</p>
+            <h1 ref={titleRef} className="welcome-title italic">
+                {renderText("portfolio",'font-georama')}</h1>
 
-            <div className="small-screen">
-            <p>This portfolio is designed for desktop/tablet screens only</p>
-            </div>
         </section>
     )
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 import {navLinks} from "#constants";
 import {navIcons} from "#constants";
@@ -17,6 +18,7 @@ const formatDateTime = (date) =>
 const Navbar = () => {
     const {openWindow }= useWindowStore();
     const [currentTime, setCurrentTime] = useState(() => formatDateTime(new Date()));
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -26,21 +28,51 @@ const Navbar = () => {
         return () => clearInterval(timer);
     }, []);
 
+    useEffect(() => {
+        if (!isMenuOpen) return;
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") setIsMenuOpen(false);
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [isMenuOpen]);
+
     return (
         <nav>
-            <div>
+            <div className="nav-brand">
                 <img src="/images/logo.svg" alt="logo" />
                 <p className="font-bold"> Somnath's Portfolio</p>
-                <ul>
+                <button
+                    type="button"
+                    className="nav-menu-toggle"
+                    aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={isMenuOpen}
+                    aria-controls="primary-navigation"
+                    onClick={() => setIsMenuOpen((open) => !open)}
+                >
+                    {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+                </button>
+                <ul id="primary-navigation" className={`nav-links${isMenuOpen ? " is-open" : ""}`}>
                     {navLinks.map(({id,name,type})=>(
-                        <li key={id} onClick={()=>openWindow(type)}>
-                            <p>{name}</p>
+                        <li key={id}>
+                            <button
+                                type="button"
+                                className="nav-link"
+                                onClick={() => {
+                                    openWindow(type);
+                                    setIsMenuOpen(false);
+                                }}
+                            >
+                                {name}
+                            </button>
                         </li>
                         ))}
                 </ul>
             </div>
 
-            <div>
+            <div className="nav-status">
                 <ul>
                     {navIcons.map(({id,img})=>(
 
